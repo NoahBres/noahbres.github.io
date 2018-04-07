@@ -211,6 +211,10 @@ body {
 }
 
 @media (max-width: 43em) {
+	.intro {
+		padding-top: 4rem;
+	}
+
 	.social {
 		padding-left: 2rem;
 		justify-content: flex-start;
