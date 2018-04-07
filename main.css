@@ -204,15 +204,15 @@ body {
 @media (max-width: 90em) {
 	.projects li {
 		width: 100%;
-		padding-top: 3rem;
-		padding-bottom: 4rem;
+		padding-top: 1rem;
+		padding-bottom: 2rem;
 		border-bottom: 1px solid #e5e5e5;
 	}
 }
 
 @media (max-width: 425px) {
 	.intro {
-		padding-top: 4rem;
+		padding-top: 3rem;
 	}
 }
 
