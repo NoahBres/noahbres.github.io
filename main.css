@@ -15,9 +15,14 @@ body {
 	overflow-x: hidden;
 }
 
-.wrapper {
+.flex {
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.wrapper {
 	width: 80%;
 	max-width: 96rem;
 }
@@ -25,10 +30,6 @@ body {
 .intro {
 	padding-top: 9rem;
 	padding-bottom: 4rem;
-
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
 }
 
 .intro h1 {
@@ -84,8 +85,7 @@ body {
 	margin-bottom: 0;
 	list-style-type: none;
 
-	display: flex;
-	flex-wrap: wrap;
+	flex-direction: row;
 	justify-content: flex-start;
 }
 
@@ -111,6 +111,7 @@ body {
 }
 
 .projects li a h3 {
+	position: relative;
 	font-size: 2.25rem;
 	margin-bottom: .5rem;
 	max-width: 20em;
@@ -119,11 +120,30 @@ body {
 	font-weight: 500;
 	color: #333;
 
-	transition: color 150ms ease;
+	transition: 150ms ease-in-out;
 }
 
 .projects li a:hover h3 {
 	color: #FD624E;
+	transform: translateX(0.5em);
+}
+
+.projects li a h3:before {
+	content: '';
+	position: absolute;
+	top: calc(50% - 0.075em);
+	left: -0.6em;
+	width: 0.5em;
+	height: 0.15em;
+	background: #FD624E;
+
+	opacity: 0;
+
+	transition: 150ms ease-in-out;
+}
+
+.projects li a:hover h3:before {
+	opacity: 1;
 }
 
 .projects li a p {
@@ -135,9 +155,8 @@ body {
 }
 
 .social {
-	display: flex;
 	flex-direction: row;
-	flex-wrap: wrap;
+	justify-content: flex-start;
 
 	max-width: 90%;
 
