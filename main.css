@@ -120,12 +120,11 @@ body {
 	font-weight: 500;
 	color: #333;
 
-	transition: 150ms ease-in-out;
+	transition: color 150ms ease-in-out;
 }
 
 .projects li a:hover h3 {
 	color: #FD624E;
-	transform: translateX(0.5em);
 }
 
 .projects li a h3:before {
@@ -139,7 +138,7 @@ body {
 
 	opacity: 0;
 
-	transition: 150ms ease-in-out;
+	transition: opacity 150ms ease-in-out;
 }
 
 .projects li a:hover h3:before {
@@ -181,23 +180,6 @@ body {
 	text-decoration: none;
 	color: #666;
 	transition: color 150ms ease;
-}
-
-.social li a:after {
-	content: attr(data-handle);
-	position: absolute;
-	top: 120%;
-	left: 0;
-	opacity: 0;
-
-	transform: translateY(-70%);
-
-	transition: 200ms ease;
-}
-
-.social li:hover a:after {
-	transform: translateY(0);
-	opacity: 1;
 }
 
 .social li:hover a.twitter {
