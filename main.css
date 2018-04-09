@@ -127,24 +127,6 @@ body {
 	color: #FD624E;
 }
 
-.projects li a h3:before {
-	content: '';
-	position: absolute;
-	top: calc(50% - 0.075em);
-	left: -0.6em;
-	width: 0.5em;
-	height: 0.15em;
-	background: #FD624E;
-
-	opacity: 0;
-
-	transition: opacity 150ms ease-in-out;
-}
-
-.projects li a:hover h3:before {
-	opacity: 1;
-}
-
 .projects li a p {
 	margin-top: 0;
 	margin-bottom: 0;
@@ -182,6 +164,23 @@ body {
 	transition: color 150ms ease;
 }
 
+.social li a:after {	
+	content: attr(data-handle);	
+	position: absolute;	
+	top: 120%;	
+	left: 0;	
+	opacity: 0;	
+
+	transform: translateY(-70%);	
+
+	transition: 200ms ease;	
+}
+	
+.social li:hover a:after {	
+	transform: translateY(0);	
+	opacity: 1;	
+}
+
 .social li:hover a.twitter {
 	color: #32CCFE;
 }
@@ -202,7 +201,7 @@ body {
 	color: #27AE60;
 }
 
-@media (max-width: 90em) {
+@media (max-width: 1155px) {
 	.projects li {
 		width: 100%;
 		padding-top: 1rem;
