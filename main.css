@@ -43,7 +43,6 @@ body {
 
 .intro .name {
 	color: #FD624E; 
-	animation: namecolor 8s infinite;
 }
 
 .intro h2 {
@@ -222,40 +221,5 @@ body {
 		padding-left: 2rem;
 		justify-content: flex-start;
 		align-items: center;
-	}
-}
-
-
-@keyframes namecolor {
-	0% {
-		color: #FD624E;
-	}
-
-	14% {
-		color: #71DACA;
-	}
-
-	28% {
-		color: #736B5F;
-	}
-
-	42% {
-		color: #22BAC5;
-	}
-
-	56% {
-		color: #309578;
-	}
-
-	70% {
-		color: #9DE7BD;
-	}
-
-	84% {
-		color: #334D87;
-	}
-
-	100% {
-		color: #FD624E;
 	}
 }
