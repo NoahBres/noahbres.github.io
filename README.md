@@ -1,2 +1,4 @@
 # noahbres.github.io
-New personal website
+Simple personal website
+
+![Screenshot of website](./assets/screenshot.png)
