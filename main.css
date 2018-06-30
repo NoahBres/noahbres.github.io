@@ -68,11 +68,11 @@ body {
 	color: #FD624E;
 }
 
-.projects {
+.projects, .blog h2 {
 	color: rgb(102, 102, 102);
 }
 
-.projects h2 {
+.projects h2, .blog h2 {
 	padding-bottom: 1rem;
 	font-size: 1.25rem;
 	font-weight: 400;
@@ -132,6 +132,53 @@ body {
 	margin-bottom: 0;
 	max-width: 30em;
 	color: #666;
+	line-height: 1.5;
+}
+
+.blog {
+	margin-top: 3em;
+}
+
+.blog ul {
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+}
+
+.blog ul li {
+	max-width: 25em;
+	margin: 0 0.8em;
+	min-width: 320px;
+}
+
+.blog ul li h4 {
+	font-size: .875rem;
+	text-transform: uppercase;
+	margin-bottom: 0;
+	color: #9f9f9f;
+	line-height: 1.5;
+	letter-spacing: .1em;
+	font-weight: 500;
+}
+
+.blog ul li a {
+	margin-top: 0;
+	font-size: 2.25rem;
+	margin-bottom: .5rem;
+	line-height: 1.2;
+	font-weight: 500;
+	color: #333;
+	text-decoration: none;
+	transition: color 200ms ease;
+}
+
+.blog ul li a:hover {
+	color: #fd624e;
+}
+
+.blog ul li p {
+	/*max-width: 50em;*/
+	color: #444;
 	line-height: 1.5;
 }
 
@@ -207,6 +254,10 @@ body {
 		padding-top: 1rem;
 		padding-bottom: 2rem;
 		border-bottom: 1px solid #e5e5e5;
+	}
+
+	.blog ul {
+		justify-content: center;
 	}
 }
 
