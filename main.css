@@ -143,6 +143,7 @@ body {
 	list-style-type: none;
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 }
 
 .blog ul li {
